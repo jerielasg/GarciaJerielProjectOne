@@ -312,7 +312,7 @@ h1 {
 
 h3 {
   font-family: "Roboto";
-  font-size: 42px;
+  font-size: 32px;
   text-transform: uppercase;
 }
 
@@ -342,6 +342,9 @@ button {
   width: 70%;
 }
 
+.blog1 {
+  margin-bottom: 50px;
+}
 .blog1 .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -350,18 +353,63 @@ button {
 .blog1 .wrapper .imgContainer {
   width: 50%;
   background-color: #A82706;
-  padding-left: 500px;
+  margin-left: -50px;
+  padding-left: 150px;
+  padding-right: 20px;
+  padding-bottom: 20px;
 }
 .blog1 .wrapper .imgContainer img {
   width: 500px;
   height: 300px;
+  float: right;
+  margin-top: -2vh;
 }
 .blog1 .wrapper .textContainer {
   width: 50%;
+  padding-left: 50px;
+}
+
+.blog2 .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.blog2 .wrapper .textContainer {
+  width: 50%;
+  padding-right: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+.blog2 .wrapper .imgContainer {
+  width: 50%;
+  background-color: #F6A823;
+  margin-right: 50px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 350px;
+  margin-top: -2vh;
+}
+.blog2 .wrapper .imgContainer img {
+  width: 500px;
+  height: 300px;
+  float: left;
+  margin-top: -4vh;
 }
 
 .midNav {
   background-color: #F0EFED;
+}
+
+.midPicture {
+  background-image: url(.../assets/home-image-4.jpg);
 }
 
 .topnav {
