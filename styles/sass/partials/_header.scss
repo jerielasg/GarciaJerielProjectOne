@@ -1,0 +1,18 @@
+header {
+    background-color: $primaryColor;
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+
+        .headerImgContainer {
+            margin-right: 100px;
+            margin-bottom: -2vw;
+            img {
+                width: 450px;
+                height: 600px;
+                box-shadow: 10px 10px #ffffff;
+            }
+        }
+    }
+}
+
