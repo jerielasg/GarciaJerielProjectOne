@@ -337,6 +337,11 @@ p {
   line-height: 32px;
 }
 
+.socialMediaIcon {
+  font-size: 20px;
+  color: #F6A823;
+}
+
 button {
   background-color: #05AFC1;
   padding: 10px 25px 10px;
@@ -503,19 +508,6 @@ button {
   list-style: none;
 }
 
-.blogHeader {
-  background-image: url("../assets/blog-image-1.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 675px;
-  width: 100%;
-}
-.blogHeader .h1Holder h1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .topnav {
   background-color: #F6A823;
   top: 0;
@@ -550,6 +542,117 @@ button {
   color: #F0EFED;
 }
 
+.blogHeader {
+  background-image: url("../assets/blog-image-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 675px;
+  width: 100%;
+}
+.blogHeader h1 {
+  margin-top: 0;
+}
+
+.blogContent {
+  background-color: #F0EFED;
+  background-size: cover;
+  padding-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.blogContent .blogLeft {
+  width: 30%;
+}
+.blogContent .blogLeft .blogAbout {
+  background-color: white;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  padding-top: 25px;
+}
+.blogContent .blogLeft .blogAbout .imgContainer img {
+  height: 400px;
+  width: 250px;
+}
+.blogContent .blogLeft .blogRecent {
+  background-color: white;
+  padding-top: 25px;
+  margin-top: 20px;
+  padding-bottom: 25px;
+}
+.blogContent .blogRight {
+  width: 60%;
+}
+.blogContent .blogRight .blogMain {
+  background-color: white;
+  border-bottom: 5px solid #F6A823;
+  margin-bottom: 20px;
+  padding-top: 25px;
+}
+.blogContent .blogRight .blogMain p {
+  padding-bottom: 15px;
+}
+.blogContent .blogRight .review1, .blogContent .blogRight .review2 {
+  background-color: white;
+  border-bottom: 5px solid #F6A823;
+  margin-bottom: 20px;
+}
+.blogContent .blogRight .review1 .wrapper, .blogContent .blogRight .review2 .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 20px;
+}
+.blogContent .blogRight .review1 .wrapper .blogImgContainer, .blogContent .blogRight .review2 .wrapper .blogImgContainer {
+  width: 20%;
+}
+.blogContent .blogRight .review1 .wrapper .reviewText, .blogContent .blogRight .review2 .wrapper .reviewText {
+  width: 80%;
+}
+.blogContent .blogForm {
+  padding-bottom: 100px;
+}
+
+.contactHeader {
+  background-image: url("../assets/contact-image-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 675px;
+  width: 100%;
+}
+.contactHeader h1 {
+  margin-top: 0;
+}
+
+.contactContent {
+  background-color: #F0EFED;
+  padding-top: 100px;
+}
+.contactContent .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.contactContent .wrapper .contactInfo {
+  width: 25%;
+  background-color: white;
+}
+.contactContent .wrapper .contactInfo .socialMediaIcon {
+  padding-top: 20px;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.contactContent .wrapper .contactForm {
+  width: 75%;
+}
+
 header {
   background-color: #F6A823;
   padding-top: 100px;
@@ -571,6 +674,34 @@ header .wrapper .headerImgContainer img {
   height: 600px;
   -webkit-box-shadow: 10px 10px #ffffff;
           box-shadow: 10px 10px #ffffff;
+}
+
+.blogForm .userInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px;
+}
+.blogForm .userInfo input[type=text], .blogForm .userInfo select {
+  width: 98%;
+  padding: 15px 15px 20px;
+  border: none;
+  margin-left: 2%;
+}
+.blogForm .userInput {
+  margin-bottom: 10px;
+}
+.blogForm .userInput input[type=text], .blogForm .userInput select {
+  width: 100%;
+  height: 200px;
+  border: none;
+}
+.blogForm input[type=submit], .blogForm select {
+  border: none;
+  background-color: #05AFC1;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 footer {

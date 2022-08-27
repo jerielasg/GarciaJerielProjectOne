@@ -1,0 +1,33 @@
+// contact.html Styles
+
+.contactHeader {
+    background-image: url("../assets/contact-image-1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 675px;
+    width: 100%;
+    h1 {
+        margin-top: 0;
+    }
+}
+
+.contactContent {
+    background-color: $backgroundColor;
+    padding-top: 100px;
+    .wrapper {
+        display: flex;
+        .contactInfo {
+            width: 25%;
+            background-color: white;
+            .socialMediaIcon {
+                padding-top: 20px;
+                list-style: none;
+                display: flex;
+                justify-content: space-evenly;
+            }
+        }
+        .contactForm {
+            width: 75%;
+        }
+    }
+}

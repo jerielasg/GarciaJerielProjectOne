@@ -1,0 +1,30 @@
+.blogForm {
+
+    .userInfo {
+        display: flex;
+        margin-bottom: 10px;
+        input[type=text], select {
+            width: 98%;
+            padding: 15px 15px 20px;
+            border:none;
+            
+            margin-left: 2%;
+        }
+    }
+    .userInput {
+        margin-bottom: 10px;
+        input[type=text], select {
+            width: 100%;
+            height: 200px;
+            border: none;
+
+        }
+    }
+    input[type=submit], select {
+        border: none;
+        background-color: $buttonColor;
+        width: 100%;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}
