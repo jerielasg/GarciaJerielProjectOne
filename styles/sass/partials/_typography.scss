@@ -8,9 +8,9 @@
 
 @font-face {
     font-family: "Roboto";
-    src: url(../fonts/roboto-v30-latin/roboto-v30-latin-700.ttf),
-        url(../fonts/roboto-v30-latin/roboto-v30-latin-700.woff),
-        url(../fonts/roboto-v30-latin/roboto-v30-latin-700.woff2);
+    src: url(../fonts/roboto-v30-latin/roboto-v30-latin-regular.ttf),
+        url(../fonts/roboto-v30-latin/roboto-v30-latin-regular.woff),
+        url(../fonts/roboto-v30-latin/roboto-v30-latin-regular.woff2);
     font-weight: normal;
 }
 
@@ -37,10 +37,24 @@ h3 {
     font-family: $secondaryFont;
     font-size: 32px;
     text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h4 {
+    font-family: $secondaryFont;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 button {
     font-family: $secondaryFont;
     font-weight: normal;
     font-size: 20px;
+}
+p {
+    font-size: 20px;
+    letter-spacing: 0;
+    font-family: $secondaryFont;
+    line-height: 32px;
 }

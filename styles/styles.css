@@ -291,7 +291,7 @@ a {
 }
 @font-face {
   font-family: "Roboto";
-  src: url(../fonts/roboto-v30-latin/roboto-v30-latin-700.ttf), url(../fonts/roboto-v30-latin/roboto-v30-latin-700.woff), url(../fonts/roboto-v30-latin/roboto-v30-latin-700.woff2);
+  src: url(../fonts/roboto-v30-latin/roboto-v30-latin-regular.ttf), url(../fonts/roboto-v30-latin/roboto-v30-latin-regular.woff), url(../fonts/roboto-v30-latin/roboto-v30-latin-regular.woff2);
   font-weight: normal;
 }
 .topnav li {
@@ -314,12 +314,27 @@ h3 {
   font-family: "Roboto";
   font-size: 32px;
   text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+h4 {
+  font-family: "Roboto";
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 button {
   font-family: "Roboto";
   font-weight: normal;
   font-size: 20px;
+}
+
+p {
+  font-size: 20px;
+  letter-spacing: 0;
+  font-family: "Roboto";
+  line-height: 32px;
 }
 
 button {
@@ -377,16 +392,9 @@ button {
 .blog2 .wrapper .textContainer {
   width: 50%;
   padding-right: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
+}
+.blog2 .wrapper .textContainer h3, .blog2 .wrapper .textContainer p {
+  text-align: right;
 }
 .blog2 .wrapper .imgContainer {
   width: 50%;
@@ -395,28 +403,124 @@ button {
   padding-bottom: 20px;
   padding-left: 20px;
   padding-right: 350px;
-  margin-top: -2vh;
+  margin-top: -1vh;
 }
 .blog2 .wrapper .imgContainer img {
   width: 500px;
   height: 300px;
   float: left;
-  margin-top: -4vh;
+  margin-top: -2vh;
 }
 
 .midNav {
   background-color: #F0EFED;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+.midNav .midNavItems {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.midNav .midNavItems li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+}
+.midNav .midNavItems li i {
+  border-radius: 50%;
+  background-color: #F6A823;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+.midNav .midNavItems li .midTextContainer {
+  padding-left: 20px;
+  width: 80%;
+}
+.midNav .midNavItems li .midTextContainer h4 {
+  padding-bottom: 20px;
+}
+.midNav .midNavItems li .midTextContainer p {
+  padding-bottom: 30px;
 }
 
 .midPicture {
-  background-image: url(.../assets/home-image-4.jpg);
+  background-image: url(../assets/home-image-4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  width: 100%;
+}
+
+.midAbout {
+  background-color: #F0EFED;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.midAbout .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.midAbout .wrapper .imgContainer {
+  width: 30%;
+}
+.midAbout .wrapper .imgContainer img {
+  -webkit-box-shadow: 15px 15px #F6A823;
+          box-shadow: 15px 15px #F6A823;
+}
+.midAbout .wrapper .textContainer {
+  padding-left: 80px;
+}
+.midAbout .wrapper .textContainer h3, .midAbout .wrapper .textContainer p {
+  padding-bottom: 20px;
+}
+
+.gallery {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.gallery ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  list-style: none;
+}
+
+.blogHeader {
+  background-image: url("../assets/blog-image-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 675px;
+  width: 100%;
+}
+.blogHeader .h1Holder h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .topnav {
   background-color: #F6A823;
   top: 0;
   height: 25px;
-  padding-bottom: 150px;
+  padding-bottom: 75px;
 }
 .topnav .wrapper {
   width: 40%;
@@ -448,6 +552,7 @@ button {
 
 header {
   background-color: #F6A823;
+  padding-top: 100px;
 }
 header .wrapper {
   display: -webkit-box;
@@ -466,4 +571,15 @@ header .wrapper .headerImgContainer img {
   height: 600px;
   -webkit-box-shadow: 10px 10px #ffffff;
           box-shadow: 10px 10px #ffffff;
+}
+
+footer {
+  background-color: #2C2C2C;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+footer p {
+  font-family: "Roboto";
+  color: #F0EFED;
 }

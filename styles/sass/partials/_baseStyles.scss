@@ -6,6 +6,9 @@ button {
     text-transform: uppercase;
     
 }
+
+
+// index.html//
 .aboutShort {
     background-color: $backgroundColor;
     padding-top: 100px;
@@ -57,9 +60,9 @@ button {
         .textContainer {
             width: 50%;
             padding-right:50px;
-            display: flex;
-            flex-direction: column;
-            justify-content: right;
+            h3, p {
+                text-align: right;
+            }
            
         }
         .imgContainer {
@@ -69,20 +72,118 @@ button {
             padding-bottom: 20px;
             padding-left: 20px;
             padding-right: 350px;
-            margin-top: -2vh;
+            margin-top: -1vh;
             img {
                 width: 500px;
                 height: 300px;
                 float: left;
-                margin-top: -4vh;
+                margin-top: -2vh;
             }
         }
     }
 }
 .midNav {
     background-color: $backgroundColor;
+    padding-top: 100px;
+    padding-bottom: 50px;
+
+    
+    .midNavItems {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        li {
+            display: flex;
+            width: 50%;
+            i{
+                border-radius: 50%;
+                background-color: $primaryColor;
+              
+                font-size: 20px;
+                width: 40px;
+                height: 40px;
+                padding-left: 10px;
+                padding-top: 10px;
+
+
+            }
+            .midTextContainer {
+                padding-left: 20px;
+                width:80%;
+                h4 {
+                    padding-bottom: 20px;
+                }
+                p {
+                    padding-bottom: 30px;
+                }
+              
+            }
+        }
+        
+    }
 }
+    
 
 .midPicture {
-    background-image: url(.../assets/home-image-4.jpg);
+    background-image: url(../assets/home-image-4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+}
+
+.midAbout {
+    background-color: $backgroundColor;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    
+    .wrapper {
+        display: flex;
+        .imgContainer {
+            width: 30%;
+            img {
+                box-shadow: 15px 15px $primaryColor;
+            }
+        }
+        .textContainer {
+            padding-left: 80px;
+            h3, p {
+                padding-bottom: 20px;
+            }
+        }
+
+    }
+}
+
+.gallery {
+   padding-top: 100px;
+   padding-bottom: 100px;
+   
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        list-style: none;
+    }
+}
+
+
+// blog.html//
+
+.blogHeader {
+    background-image: url("../assets/blog-image-1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 675px;
+    width: 100%;
+    
+
+    .h1Holder{
+        
+        h1 {
+            display: flex;
+            
+        }
+    }
 }
