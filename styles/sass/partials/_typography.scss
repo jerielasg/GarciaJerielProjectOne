@@ -72,9 +72,16 @@ p {
         color: $primaryColor;
     }
 }
-//.contactDetails
-//{
- //   p {
-        
-  //  }
-//}
+.blogContent {
+    .blogRecent {
+        a {
+            font-family: $secondaryFont;
+        }
+        a:link, a:visited {
+            color: $blackColor;
+        }
+        a:hover, a:active {
+            color: $primaryColor
+        }
+    }
+}

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -348,6 +349,16 @@ p {
   color: #F6A823;
 }
 
+.blogContent .blogRecent a {
+  font-family: "Roboto";
+}
+.blogContent .blogRecent a:link, .blogContent .blogRecent a:visited {
+  color: #2C2C2C;
+}
+.blogContent .blogRecent a:hover, .blogContent .blogRecent a:active {
+  color: #F6A823;
+}
+
 button {
   background-color: #05AFC1;
   padding: 10px 25px 10px;
@@ -379,16 +390,15 @@ button {
 .blog1 .wrapper .imgContainer {
   width: 50%;
   background-color: #A82706;
-  margin-left: -50px;
-  padding-left: -1vw;
-  padding-right: 20px;
-  padding-bottom: 20px;
+  padding-right: 1vw;
+  padding-bottom: 1vh;
+  margin-top: -2vh;
 }
 .blog1 .wrapper .imgContainer img {
   width: 500px;
   height: 300px;
   float: right;
-  margin-top: -2vh;
+  margin-top: -3vh;
 }
 .blog1 .wrapper .textContainer {
   width: 50%;
@@ -410,17 +420,17 @@ button {
 .blog2 .wrapper .imgContainer {
   width: 50%;
   background-color: #F6A823;
-  margin-right: 50px;
-  padding-bottom: 20px;
-  padding-left: 20px;
+  padding-bottom: 4vh;
   padding-right: 350px;
-  margin-top: -1vh;
+  margin-bottom: -2vh;
 }
 .blog2 .wrapper .imgContainer img {
   width: 500px;
   height: 300px;
+  margin-top: -1vh;
   float: left;
-  margin-top: -2vh;
+  margin-bottom: -3vh;
+  margin-left: -1vw;
 }
 
 .midNav {
@@ -578,15 +588,47 @@ button {
   margin-bottom: 20px;
   padding-top: 25px;
 }
+.blogContent .blogLeft .blogAbout .imgContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 20px;
+}
 .blogContent .blogLeft .blogAbout .imgContainer img {
   height: 400px;
-  width: 250px;
+  width: 300px;
+}
+.blogContent .blogLeft .blogAbout h3 {
+  padding-bottom: 15px;
+}
+.blogContent .blogLeft .blogAbout p {
+  padding-bottom: 20px;
 }
 .blogContent .blogLeft .blogRecent {
   background-color: white;
   padding-top: 25px;
   margin-top: 20px;
   padding-bottom: 25px;
+}
+.blogContent .blogLeft .blogRecent h3 {
+  padding-bottom: 15px;
+}
+.blogContent .blogLeft .blogRecent .navRecent {
+  padding-left: 50px;
+  list-style: none;
+}
+.blogContent .blogLeft .blogRecent .navRecent li {
+  padding-bottom: 5px;
+}
+.blogContent .blogLeft .blogRecent .navRecent li::before {
+  content: "•";
+  color: #F6A823;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
 }
 .blogContent .blogRight {
   width: 60%;
@@ -708,6 +750,7 @@ header .wrapper .headerImgContainer img {
   width: 98%;
   padding: 15px 15px 20px;
   border: none;
+  font-style: italic;
 }
 .blogForm .userInfo #formEmail {
   margin-left: 10px;
@@ -719,6 +762,9 @@ header .wrapper .headerImgContainer img {
   width: 100%;
   height: 200px;
   border: none;
+  font-style: italic;
+  padding-left: 15px;
+  padding-bottom: 150px;
 }
 .blogForm input[type=submit], .blogForm select {
   border: none;

@@ -25,11 +25,23 @@
             padding-bottom: 20px;
             margin-bottom: 20px;
             padding-top: 25px;
+            
             .imgContainer{
+                display: flex;
+                justify-content: center;
+                padding-bottom: 20px;
                 img {
+
                     height: 400px;
-                    width: 250px;
+                    width: 300px;
                 }
+                
+            }
+            h3 {
+                padding-bottom: 15px;
+            }
+            p {
+                padding-bottom: 20px;
             }
         }
         .blogRecent {
@@ -37,6 +49,25 @@
             padding-top: 25px;
             margin-top: 20px;
             padding-bottom: 25px;
+            h3 {
+                padding-bottom: 15px;
+            }
+            .navRecent {
+                padding-left: 50px;
+                list-style: none;
+                li {
+                    padding-bottom: 5px;
+                }
+                li::before {
+                    content: "•"; 
+                    color: $primaryColor;
+                    display: inline-block;
+                    width: 1em;
+                    margin-left: -1em;
+                }
+
+            }
+            
         }
     }
     .blogRight {
