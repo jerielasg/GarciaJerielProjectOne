@@ -47,6 +47,12 @@ h4 {
     letter-spacing: 1px;
 }
 
+h6 {
+    font-family: $secondaryFont;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
 button {
     font-family: $secondaryFont;
     font-weight: normal;
@@ -61,7 +67,14 @@ p {
 
 
 .socialMediaIcon {
-    font-size: 20px;
-    color: $primaryColor;
-    a
+    i {
+        font-size: 30px;
+        color: $primaryColor;
+    }
 }
+//.contactDetails
+//{
+ //   p {
+        
+  //  }
+//}

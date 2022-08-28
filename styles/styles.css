@@ -324,6 +324,12 @@ h4 {
   letter-spacing: 1px;
 }
 
+h6 {
+  font-family: "Roboto";
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+
 button {
   font-family: "Roboto";
   font-weight: normal;
@@ -337,8 +343,8 @@ p {
   line-height: 32px;
 }
 
-.socialMediaIcon {
-  font-size: 20px;
+.socialMediaIcon i {
+  font-size: 30px;
   color: #F6A823;
 }
 
@@ -359,7 +365,7 @@ button {
 }
 .aboutShort p {
   padding-bottom: 10px;
-  width: 70%;
+  width: 80%;
 }
 
 .blog1 {
@@ -374,7 +380,7 @@ button {
   width: 50%;
   background-color: #A82706;
   margin-left: -50px;
-  padding-left: 150px;
+  padding-left: -1vw;
   padding-right: 20px;
   padding-bottom: 20px;
 }
@@ -614,6 +620,9 @@ button {
 .blogContent .blogForm {
   padding-bottom: 100px;
 }
+.blogContent .blogForm .wrapper {
+  width: 100%;
+}
 
 .contactHeader {
   background-image: url("../assets/contact-image-1.jpg");
@@ -629,6 +638,7 @@ button {
 .contactContent {
   background-color: #F0EFED;
   padding-top: 100px;
+  padding-bottom: 100px;
 }
 .contactContent .wrapper {
   display: -webkit-box;
@@ -645,12 +655,24 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-bottom: 20px;
+}
+.contactContent .wrapper .contactInfo .socialMediaIcon i {
+  padding-left: 25px;
+}
+.contactContent .wrapper .contactInfo .contactDetails {
+  list-style: none;
+  padding-left: 20px;
+}
+.contactContent .wrapper .contactInfo .contactDetails h6 {
+  padding-bottom: 20px;
 }
 .contactContent .wrapper .contactForm {
   width: 75%;
+  padding-left: 25px;
 }
 
 header {
@@ -686,7 +708,9 @@ header .wrapper .headerImgContainer img {
   width: 98%;
   padding: 15px 15px 20px;
   border: none;
-  margin-left: 2%;
+}
+.blogForm .userInfo #formEmail {
+  margin-left: 10px;
 }
 .blogForm .userInput {
   margin-bottom: 10px;
@@ -697,6 +721,39 @@ header .wrapper .headerImgContainer img {
   border: none;
 }
 .blogForm input[type=submit], .blogForm select {
+  border: none;
+  background-color: #05AFC1;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.contactForm .userInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px;
+}
+.contactForm .userInfo input[type=text],
+.contactForm .userInfo select {
+  width: 100%;
+  padding: 15px 15px 20px;
+  border: none;
+}
+.contactForm .userInfo #formEmail {
+  margin-left: 10px;
+}
+.contactForm .userInput {
+  margin-bottom: 10px;
+}
+.contactForm .userInput input[type=text],
+.contactForm .userInput select {
+  width: 100%;
+  height: 200px;
+  border: none;
+}
+.contactForm input[type=submit],
+.contactForm select {
   border: none;
   background-color: #05AFC1;
   width: 100%;

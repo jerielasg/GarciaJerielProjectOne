@@ -46,7 +46,7 @@
             border-bottom: 5px solid $primaryColor;
             margin-bottom: 20px;
             padding-top: 25px;
-            p{
+            p {
                 padding-bottom: 15px;
             }
         }
@@ -71,5 +71,8 @@
     }
     .blogForm{
         padding-bottom: 100px;
+        .wrapper {
+            width: 100%;
+        }
     }
 }

@@ -14,6 +14,7 @@
 .contactContent {
     background-color: $backgroundColor;
     padding-top: 100px;
+    padding-bottom: 100px;
     .wrapper {
         display: flex;
         .contactInfo {
@@ -23,11 +24,23 @@
                 padding-top: 20px;
                 list-style: none;
                 display: flex;
-                justify-content: space-evenly;
+                justify-content: flex-start;
+                padding-bottom: 20px;
+                i {
+                    padding-left: 25px;
+                }
+            }
+            .contactDetails {
+                list-style: none;
+                padding-left: 20px;
+                h6 {
+                    padding-bottom: 20px;
+                }
             }
         }
         .contactForm {
             width: 75%;
+            padding-left: 25px;
         }
     }
 }
