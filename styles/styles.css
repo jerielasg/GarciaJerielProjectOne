@@ -281,7 +281,7 @@ a {
 
 .wrapper {
   max-width: 1260px;
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -309,6 +309,7 @@ a {
 h1 {
   font-family: "Lora";
   font-size: 125px;
+  text-transform: uppercase;
 }
 
 h3 {
@@ -413,8 +414,18 @@ button {
 .blog2 .wrapper .textContainer {
   width: 50%;
   padding-right: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
-.blog2 .wrapper .textContainer h3, .blog2 .wrapper .textContainer p {
+.blog2 .wrapper .textContainer p {
   text-align: right;
 }
 .blog2 .wrapper .imgContainer {
@@ -564,9 +575,18 @@ button {
   background-repeat: no-repeat;
   height: 675px;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
-.blogHeader h1 {
-  margin-top: 0;
+.blogHeader .h1Holder {
+  padding-left: 100px;
+}
+.blogHeader .h1Holder h1 {
+  margin-bottom: -85px;
 }
 
 .blogContent {
@@ -576,11 +596,12 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 .blogContent .blogLeft {
-  width: 30%;
+  width: 25%;
 }
 .blogContent .blogLeft .blogAbout {
   background-color: white;
@@ -672,9 +693,18 @@ button {
   background-repeat: no-repeat;
   height: 675px;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
-.contactHeader h1 {
-  margin-top: 0;
+.contactHeader .h1Holder {
+  padding-left: 200px;
+}
+.contactHeader .h1Holder h1 {
+  margin-bottom: -77px;
 }
 
 .contactContent {
@@ -785,6 +815,9 @@ header .wrapper .headerImgContainer img {
   width: 100%;
   padding: 15px 15px 20px;
   border: none;
+  padding: 15px 15px 20px;
+  border: none;
+  font-style: italic;
 }
 .contactForm .userInfo #formEmail {
   margin-left: 10px;
@@ -797,6 +830,9 @@ header .wrapper .headerImgContainer img {
   width: 100%;
   height: 200px;
   border: none;
+  font-style: italic;
+  padding-left: 15px;
+  padding-bottom: 150px;
 }
 .contactForm input[type=submit],
 .contactForm select {
