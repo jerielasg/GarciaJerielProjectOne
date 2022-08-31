@@ -49,6 +49,10 @@
             p {
                 padding-bottom: 20px;
             }
+            a {
+                color: $linkColor;
+                font-weight: bold;
+            }
         }
         .blogRecent {
             background-color: white;
@@ -78,11 +82,17 @@
     }
     .blogRight {
         width: 60%;
+        
         .blogMain {
             background-color: white;
             border-bottom: 5px solid $primaryColor;
             margin-bottom: 20px;
-            padding-top: 25px;
+            padding-top: 35px;
+            padding-bottom: 25px;
+            h5 {
+                padding-top: 25px;
+                padding-bottom: 20px;
+            }
             p {
                 padding-bottom: 15px;
             }
@@ -91,17 +101,26 @@
             background-color: white;
             border-bottom: 5px solid $primaryColor;
             margin-bottom: 20px;
+            padding-top: 25px;
+            padding-bottom: 25px;
             
             .wrapper {
                 display: flex;
                 padding-top: 20px;
                     .blogImgContainer {
                     width: 20%;
+                    img{
+                        height: 125px;
+                        width: 125px;
+                    }
                     
                 }
         
                 .reviewText {
                     width: 80%;
+                    h5 {
+                        padding-bottom: 25px;
+                    }
                 }
             }
         }

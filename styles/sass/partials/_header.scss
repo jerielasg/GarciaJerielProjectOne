@@ -3,8 +3,22 @@ header {
     padding-top: 100px;
     .wrapper {
         display: flex;
-        justify-content: space-between;
-
+        justify-content: space-evenly;
+        /*.headerLeft {
+            h1 {
+                display: flex;
+                justify-content: center;
+                
+            }*/
+           
+            h1::before {
+                content: url("../assets/circle-text.png");
+                position: relative;
+                left:15%;
+                
+                
+            }
+        }
         .headerImgContainer {
             margin-right: 100px;
             margin-bottom: -2vw;
@@ -14,6 +28,6 @@ header {
                 box-shadow: 10px 10px #ffffff;
             }
         }
-    }
 }
+
 

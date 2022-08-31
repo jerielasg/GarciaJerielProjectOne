@@ -1,0 +1,278 @@
+@media (max-width: 750px) {
+    .midNav {
+        .wrapper {
+            .midNavItems{
+                li {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+}
+@media (max-width: 900px) {
+    .topnav {
+        .wrapper {
+            width: 100%;
+            display: flex;
+            
+            justify-content: center;
+            
+            ul {
+                width: 100%;
+                padding-left: 5%;
+                padding-right: 5%;
+                h1 {
+                    display: none;
+                }
+                
+            }
+        }
+    }
+
+    /* Index.html media styles*/
+    header{
+        .wrapper { 
+            height: 350px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .headerLeft {
+               
+                h1 {
+                   
+                    font-size: 40px;
+                    margin-bottom: 0px;
+                }
+                h1::before {
+                    content: url("../assets/circle-text.png");
+                    position: absolute;
+                    left:30%;
+                    top:10%;
+                    width: 200px;
+                    height: 100px;
+                }
+            }
+            .headerImgContainer {
+                width: 100%;
+                
+                top:25%;
+                display: flex;
+                justify-content: center;
+                
+                margin-right: 0;
+                img {
+                    width: 25%;
+                    height: 95%;
+                    
+
+                }
+            }
+        }
+    }
+
+    .aboutShort {
+        p {
+            text-align: justify;
+        }
+    }
+    .blog1 {
+        
+        .wrapper{
+            flex-direction: column;
+            justify-content: center;
+            .imgContainer {
+                width: 100%;
+                background-color: transparent;
+                display: flex;
+                justify-content: center;
+                margin-top: 0vh;
+                padding-bottom: 5vh;
+                img{
+                    position: relative;
+                    width: 80%;
+                    height: 40%;
+                }
+            }
+            .textContainer {
+                width: 100%;
+                
+                justify-content: left;
+                
+                p {
+                    text-align: justify;
+                }
+            }
+        
+        }
+    }
+
+        .blog2 {
+    
+            .wrapper {
+                flex-direction: column-reverse;
+                justify-content: center;
+    
+                .imgContainer {
+                    width: 100%;
+                    background-color: transparent;
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 0vh;
+                    padding-bottom: 5vh;
+                    padding-right: 0px;
+    
+                    img {
+                        position: relative;
+                        width: 80%;
+                        height: 40%;
+                    }
+                }
+    
+                .textContainer {
+                    width: 100%;
+                    padding-bottom: 5vh;
+                    padding-right: 0px;
+                    padding-left: 5vh;
+                    padding-top: 5vh;
+                    display: block;
+                    justify-content: left;
+                    p {
+                            text-align: justify;
+                    }
+                }
+    
+            }
+        }
+    .midAbout{
+        .wrapper {
+            flex-direction: column;
+            justify-self: center;
+            
+
+            .imgContainer {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+            }
+
+            .textContainer {
+                padding-top: 5vh;
+                p {
+                    text-align: justify;
+                }
+            }
+        }
+    }
+    .gallery {
+        width: 100%;
+        ul {
+            flex-direction: column;
+        }
+    }
+
+ /* page header media styles*/
+    .blogHeader, .contactHeader {
+        width:100%;
+        height: 75%;
+        display: flex;
+        justify-content: center;
+        .h1Holder {
+            padding-left: 0px;
+            
+            h1 {
+                margin-bottom: 0;
+                font-size: 50px;
+            }
+        }
+
+    }
+
+ /* blog.html media styles*/
+    .blogContent {
+        .blogRight{
+            .review1, .review2 {
+                .wrapper {
+                    flex-direction: column;
+                    justify-content: center;
+                    .blogImgContainer {
+                        padding-bottom: 2vh;
+                    }
+                }
+            }
+        }
+    }
+
+ 
+
+ /*Form media styles*/
+    .blogForm, .contactForm {
+        .userInfo {
+            flex-direction: column;
+            input[type=text], select {
+                margin-bottom: 2vh;
+                
+            }
+            #formEmail {
+                margin-left: 0;
+            }
+            
+        }
+    }
+    
+    
+
+
+}
+
+
+@media (max-width: 1250px) {
+
+    .blogContent {
+        flex-direction: column;
+        .blogLeft {
+            width: 100%;
+            .blogAbout {
+                .imgContainer {
+                    img {
+                        width: 50%;
+                        height: 95%;
+                    }
+                }
+            }
+            .blogRecent{
+                margin-bottom: 2vh;
+            }
+        }
+        .blogRight {
+            width: 100%;
+            p{
+                text-align: justify;
+            }
+        }
+    }
+        /*contact.html media styles*/
+        .contactContent {
+            .wrapper {
+                flex-direction: column;
+    
+                .contactInfo {
+                    width: 100%;
+                    padding-bottom: 2vh;
+                    margin-bottom: 2vh;
+    
+                    .socialMediaIcon {
+                        justify-content: center;
+                    }
+                }
+                .contactForm {
+                    width: 100%;
+                    padding-left: 0px;
+                    margin-left: 0;
+                    
+                }
+            }
+        }
+    
+}
