@@ -930,6 +930,9 @@ footer p {
   }
 }
 @media (max-width: 900px) {
+  .topnav {
+    padding-top: 5vh;
+  }
   .topnav .wrapper {
     width: 100%;
     display: -webkit-box;
