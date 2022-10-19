@@ -5,6 +5,10 @@
     padding-bottom: 75px;
     .wrapper {
         width: 40%;
+        button {
+            display: none;
+            height: 25%;
+        }
         ul{
             display: flex;
             justify-content: space-between;
@@ -13,6 +17,7 @@
             li {
                 text-decoration: none;
                 list-style: none;
+                
                 
                 a:link {
                     color: black;
@@ -26,5 +31,32 @@
                 
             }
         }
+        
+        .hamburgerMenu{
+            display: none;
+            
+            li {
+                padding-bottom: 10px;
+                border: 1px;
+                
+            }
+        }
+    }
+}
+.show {
+    display: block;
+    animation-name: slide_out;
+    animation-duration: 2s;
+    background-color: $primaryColor;
+}
+@keyframes slide_out {
+    0% {
+        position: relative;
+        left: -1000%;
+    }
+
+    100% {
+        position: relative
+        left 0;
     }
 }

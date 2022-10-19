@@ -1,4 +1,8 @@
 @media (max-width: 750px) {
+    .desktopMenu {
+        display: none;
+    }
+
     .midNav {
         .wrapper {
             .midNavItems{
@@ -18,15 +22,26 @@
             display: flex;
             
             justify-content: center;
-            
-            ul {
+            button {
+                display: block;
+                
+            }
+            .desktopMenu {
                 width: 100%;
                 padding-left: 5%;
                 padding-right: 5%;
+                display: none;
                 h1 {
                     display: none;
                 }
                 
+            }
+            .hamburgerMenu {
+                display: block;
+
+                h1 {
+                        display: none;
+                    }
             }
         }
     }
@@ -50,7 +65,7 @@
                     content: url("../assets/circle-text.png");
                     position: absolute;
                     left:30%;
-                    top:10%;
+                    top:35%;
                     width: 200px;
                     height: 100px;
                 }

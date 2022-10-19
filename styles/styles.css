@@ -400,6 +400,26 @@ button {
   text-transform: uppercase;
 }
 
+.buttonHolder {
+  position: relative;
+}
+.buttonHolder .buttonTop {
+  position: fixed;
+  bottom: 40px;
+  right: 25px;
+  z-index: 10;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .aboutShort {
   background-color: #F0EFED;
   padding-top: 100px;
@@ -586,6 +606,10 @@ button {
 .topnav .wrapper {
   width: 40%;
 }
+.topnav .wrapper button {
+  display: none;
+  height: 25%;
+}
 .topnav .wrapper ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -610,7 +634,42 @@ button {
 .topnav .wrapper ul li a:hover {
   color: #F0EFED;
 }
+.topnav .wrapper .hamburgerMenu {
+  display: none;
+}
+.topnav .wrapper .hamburgerMenu li {
+  padding-bottom: 10px;
+  border: 1px;
+}
 
+.show {
+  display: block;
+  -webkit-animation-name: slide_out;
+          animation-name: slide_out;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  background-color: #F6A823;
+}
+
+@-webkit-keyframes slide_out {
+  0% {
+    position: relative;
+    left: -1000%;
+  }
+  100% {
+    position: relative left 0;
+  }
+}
+
+@keyframes slide_out {
+  0% {
+    position: relative;
+    left: -1000%;
+  }
+  100% {
+    position: relative left 0;
+  }
+}
 .blogHeader {
   background-image: url("../assets/blog-image-1.jpg");
   background-size: cover;
@@ -926,6 +985,9 @@ footer p {
 }
 
 @media (max-width: 750px) {
+  .desktopMenu {
+    display: none;
+  }
   .midNav .wrapper .midNavItems li {
     width: 100%;
   }
@@ -943,12 +1005,22 @@ footer p {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .topnav .wrapper ul {
+  .topnav .wrapper button {
+    display: block;
+  }
+  .topnav .wrapper .desktopMenu {
     width: 100%;
     padding-left: 5%;
     padding-right: 5%;
+    display: none;
   }
-  .topnav .wrapper ul h1 {
+  .topnav .wrapper .desktopMenu h1 {
+    display: none;
+  }
+  .topnav .wrapper .hamburgerMenu {
+    display: block;
+  }
+  .topnav .wrapper .hamburgerMenu h1 {
     display: none;
   }
   /* Index.html media styles*/
@@ -976,7 +1048,7 @@ footer p {
     content: url("../assets/circle-text.png");
     position: absolute;
     left: 30%;
-    top: 10%;
+    top: 35%;
     width: 200px;
     height: 100px;
   }

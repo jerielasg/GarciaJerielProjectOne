@@ -6,6 +6,24 @@ button {
     text-transform: uppercase;
     
 }
+.buttonHolder {
+    position: relative;
+    .buttonTop {
+        position: fixed;
+        bottom: 40px;
+        right: 25px;
+        z-index: 10;
+        //visibility: hidden;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+}
+
+
 
 
 // index.html//
